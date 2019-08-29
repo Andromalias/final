@@ -1,0 +1,30 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Change Location of Button"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/changex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Change x position"
+        android:inputType="numberSigned" />
+
+    <EditText
+        android:id="@+id/changey"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Change Y position)"
+        android:inputType="numberSigned" />
+
+</LinearLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/wowow"
+        android:layout_width="406dp"
+        android:layout_height="731dp"
+        android:layout_alignBaseline="@id/press_me"
+        android:baselineAlignBottom="false"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="2dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        tools:layout_editor_absoluteX="36dp"
+        tools:layout_editor_absoluteY="638dp" />
+
+    <Button
+        android:id="@+id/press_me"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FF0000"
+        android:gravity="center_vertical|center_horizontal"
+        android:onClick="onClick"
+        android:text="Button"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:text="Press Me!" />
+
+    <FrameLayout
+        android:id="@+id/Framelayout"
+        android:layout_width="221dp"
+        android:layout_height="415dp"
+        android:layout_alignStart="@+id/button2"
+        android:layout_alignLeft="@+id/button2"
+        android:layout_marginStart="200dp"
+        android:layout_marginLeft="200dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ListView
+                android:id="@+id/set_stuff_for_button"
+                android:layout_width="500dp"
+                android:layout_height="400dp"></ListView>
+
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="234dp"
+        tools:layout_editor_absoluteY="87dp">
+
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
